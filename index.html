@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="categories" class="container">
+      <li class="item">
+        <h2 class="sub-title">Animals</h2>
+        <ul>
+          <li class="list-style">Cat</li>
+          <li class="list-style">Hamster</li>
+          <li class="list-style">Horse</li>
+          <li class="list-style">Parrot</li>
+        </ul>
+      </li>
+      <li class="item">
+        <h2 class="sub-title">Products</h2>
+        <ul>
+          <li class="list-style">Bread</li>
+          <li class="list-style">Parsley</li>
+          <li class="list-style">Cheese</li>
+        </ul>
+      </li>
+      <li class="item">
+        <h2 class="sub-title">Technologies</h2>
+        <ul>
+          <li class="list-style">HTML</li>
+          <li class="list-style">CSS</li>
+          <li class="list-style">JavaScript</li>
+          <li class="list-style">React</li>
+          <li class="list-style">Node.js</li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="gallery"></ul>
+    <input type="text" id="name-input" placeholder="Please enter your name" />
+    <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+    <form class="login-form">
+      <div class="label-container">
+        <label class="label">
+          Email
+          <input type="email" name="email" />
+        </label>
+        <label class="label">
+          Password
+          <input type="password" name="password" />
+        </label>
+      </div>
+      <button type="submit" class="btn-submit">Log in</button>
+    </form>
+    <div class="widget">
+      <p>Background color: <span class="color">-</span></p>
+      <button type="button" class="change-color">Change color</button>
+    </div>
+    <div id="controls">
+      <input class="input-controls" type="number" min="1" max="100" step="1" />
+      <button class="create-btn" type="button" data-create>Create</button>
+      <button class="destroy-btn" type="button" data-destroy>Destroy</button>
+    </div>
+
+    <div id="boxes"></div>
+    <script defer src="./js/task-1.js"></script>
+    <script defer src="./js/task-2.js"></script>
+    <script defer src="./js/task-3.js"></script>
+    <script defer src="./js/task-4.js"></script>
+    <script defer src="./js/task-5.js"></script>
+    <script defer src="./js/task-6.js"></script>
+  </body>
+</html>
