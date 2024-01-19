@@ -14,6 +14,7 @@ function destroyBoxes() {
 btnDestroy.addEventListener("click", destroyBoxes);
 
 function createBoxes(amount) {
+  boxDiv.innerHTML = "";
   let startSize = 30;
   const step = 10;
   const divArray = [];
@@ -31,7 +32,7 @@ function createBoxes(amount) {
 }
 
 btnCreate.addEventListener("click", () => {
-  const amountBoxes = inputElement.value;
+  const amountBoxes = parseInt(inputElement.value);
   if (amountBoxes >= 1 && amountBoxes <= 100) {
     createBoxes(amountBoxes);
   }
